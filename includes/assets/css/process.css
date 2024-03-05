@@ -1,0 +1,33 @@
+
+.process-area h4 {
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: "Bai Jamjuree";
+    margin: 0;
+}
+.process-area a {
+    color: #F7BB4B;
+    font-size: 24px;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #000000;
+    line-height: 70px;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.single-process{
+    text-align: center;
+}
+
+@media (min-width: 1025px){
+    .process-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    .single-process{
+        flex-basis: 33.3333%;
+    }
+}

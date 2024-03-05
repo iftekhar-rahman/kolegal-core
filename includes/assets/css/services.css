@@ -1,0 +1,126 @@
+.service-thumb {
+    height: 408px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    transition: all .5s ease;
+  }
+  .service-thumb-wrap {
+    overflow: hidden;
+  }
+  .service-thumb-wrap:hover .service-thumb {
+    transform: scale(1.1);
+  }
+  .service-thumb-wrap {
+    transition: all .5s ease;
+  }
+  .services-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  .single-service-item {
+    position: relative;
+  }
+  .service-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 85%;
+    background-color: #000000bd;
+    padding: 14px 10px 10px 12px;
+  }
+  .service-content a {
+    color: #fff;
+    display: block;
+  }
+  .service-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1em;
+    margin: 0 0 18px;
+    color: #fff;
+  }
+  .service-content .learn-btn {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFB853;
+  }
+  .service-content .learn-btn i {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: -2px;
+    right: -5px;
+  }
+  
+  
+  /* .services-2-area */
+  .services-section.services-2-area .service-content {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 25px 25px;
+  }
+  .services-section.services-2-area .service-content h2 {
+    color: #000;
+  }
+  .services-section.services-2-area .service-content a.learn-btn {
+    color: #FFB853;
+  }
+  .services-section.services-2-area .service-thumb {
+    height: 320px;
+  }
+  .services-section.services-2-area .single-service-item {
+    border: 1px solid #E1E1E3;
+  }
+  .services-section.services-2-area .service-content .d-none {
+    display: block;
+    margin: 0 0 10px;
+  }
+
+
+
+
+@media (max-width: 1300px) {
+
+
+  .service-content{
+    width: 90%;
+  }
+
+
+
+  
+}
+
+
+
+@media (max-width: 767px) {
+
+
+.services-section {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+  
+}
+
+@media (max-width: 575px) {
+
+
+  .services-section {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+  }
+  .services-section.services-2-area .service-content {
+      padding: 25px 20px 25px;
+  }
+  
+  
+  
+    
+  }

@@ -1,0 +1,153 @@
+.calculator-body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    height: 100vh;
+    margin: 0;
+  }
+  .calculator {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 0px;
+    display: flex;
+    column-gap: 30px;
+  }
+  .calculator-container {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 700px;
+    padding: 20px;
+    text-align: center;
+  }
+  /* .calculator h2 {
+    font-size: 24px;
+    color: #333;
+  } */
+  .calculator label,
+  .calculator input,
+  .calculator select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .calculator input,
+  .calculator select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .calculator button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .calculator button:hover {
+    background-color: #0056b3;
+  }
+  #result {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #FFFAF3;
+    border-radius: 6px;
+    min-height: 150px;
+    color: #040415;
+    box-shadow: 0 0 3px #ccc;
+  }
+  .result-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .button-container button:last-child {
+    margin-right: 0;
+}
+  .date-input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .calculator input, .calculator select {
+    border: 1px solid #b0b0b5;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+.calculator input:focus, .calculator select:focus, .button-container button:focus {
+    outline: 0 solid;
+    border-color: #FFB853;
+}
+.calculator label {
+    color: #000000;
+    margin: 0 0 10px;
+}
+.date-input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.button-container button {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 12px 30px;
+    margin: 10px 10px 0 0;
+    border-radius: 6px;
+}
+.button-container button:hover {
+    background: #F7BB4B;
+    color: #000;
+    border-color: #F7BB4B;
+}
+
+.calculator-inner {
+  width: 60%;
+}
+.results-wrap {
+  width: 40%;
+}
+.results-wrap h3, .calculator-inner h3 {
+  font-family: "Bai Jamjuree";
+  font-weight: 700;
+  margin: 0 0 15px;
+  font-size: 28px;
+}
+.results-wrap strong, .results-wrap h3{
+  color: #191514;
+}
+
+
+@media (max-width: 575px){
+  .calculator-inner, .results-wrap {
+    width: 100%;
+}
+.results-wrap{
+  margin-top: 30px;
+}
+  .calculator {
+    display: block;
+  }
+  #result {
+      padding: 20px 10px;
+  }
+  .calculator {
+      column-gap: 15px;
+  }
+  .results-wrap h3, .calculator-inner h3 {
+      font-size: 22px;
+  }
+}
