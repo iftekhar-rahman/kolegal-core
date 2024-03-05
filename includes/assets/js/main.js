@@ -91,6 +91,46 @@
 
     }
 
+    // Process Slider only visilbe below 1024
+    if (jQuery(window).width() < 1024) {
+      var Process = new Swiper(".Featured", {
+        slidesPerView: 3,
+        spaceBetween: 30, // Distance between slides in px.
+        loop: false,
+        centeredSlides: false,
+        preventInteractionOnTransition: true,
+        autoplay: {
+          delay: 3000,
+        },
+        fadeEffect: {
+          crossFade: true,
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 4,
+          },
+          768: {
+            slidesPerView: 4,
+            loop: true,
+            spaceBetween: 30,
+            autoplay: true,
+            autoplay: {
+              delay: 3000,
+            },
+          },
+          0: {
+            slidesPerView: 2,
+            loop: true,
+            autoplay: true,
+            autoplay: {
+              delay: 3000,
+            },
+          },
+        },
+      });
+
+    }
+
     
 
     var recentPosts = new Swiper(".recentPosts", {

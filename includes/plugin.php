@@ -431,6 +431,7 @@ final class Plugin {
 		wp_register_style( 'custom', plugins_url( '/assets/css/custom.css', __FILE__ ) );
 		wp_register_style( 'process', plugins_url( '/assets/css/process.css', __FILE__ ) );
 		wp_register_style( 'calculator', plugins_url( '/assets/css/calculator.css', __FILE__ ) );
+		wp_register_style( 'featured', plugins_url( '/assets/css/featured.css', __FILE__ ) );
 
 		wp_enqueue_style( 'swiper-bundle' );
 		wp_enqueue_style( 'common-css' );
@@ -443,6 +444,7 @@ final class Plugin {
 		wp_enqueue_style( 'custom' );
 		wp_enqueue_style( 'process' );
 		wp_enqueue_style( 'calculator' );
+		wp_enqueue_style( 'featured' );
 
 
 
@@ -511,10 +513,7 @@ final class Plugin {
 
 
 
-		// require_once( __DIR__ . '/widgets/expertise.php' );
-		// require_once( __DIR__ . '/widgets/about.php' );
-		// require_once( __DIR__ . '/widgets/recent-posts.php' );
-		// require_once( __DIR__ . '/widgets/expertise-tab.php' );
+		
 		require_once( __DIR__ . '/widgets/client-stories.php' );
 		require_once( __DIR__ . '/widgets/home-blog.php' );
 		require_once( __DIR__ . '/widgets/recent-stories.php' );
@@ -523,12 +522,9 @@ final class Plugin {
 		require_once( __DIR__ . '/widgets/mobile-menu.php' );
 		require_once( __DIR__ . '/widgets/process.php' );
 		require_once( __DIR__ . '/widgets/interest-calculator.php' );
+		require_once( __DIR__ . '/widgets/featured.php' );
 
 
-		// $widgets_manager->register( new \Ko_Legal_Addon\Ko_Legal_About() );
-		// $widgets_manager->register( new \Ko_Legal_Addon\Ko_Legal_Expertise() );
-		// $widgets_manager->register( new \Ko_Legal_Addon\Ko_Legal_Expertise_Tab() );
-		// $widgets_manager->register( new \Ko_Legal_Addon\Ko_Legal_Recent_Posts() );
 		$widgets_manager->register( new \Ko_Legal_Addon\Ko_Legal_Client_Stories() );
 		$widgets_manager->register( new \Ko_Legal_Addon\Ko_Legal_Home_Blog() );
 		$widgets_manager->register( new \Ko_Legal_Addon\Ko_Legal_Recent_Stories() );
@@ -537,6 +533,7 @@ final class Plugin {
 		$widgets_manager->register( new \Ko_Legal_Addon\Ko_Legal_Mobile_Menu() );
 		$widgets_manager->register( new \Ko_Legal_Addon\Ko_Legal_Process() );
 		$widgets_manager->register( new \Ko_Legal_Addon\Ko_Legal_Calculator() );
+		$widgets_manager->register( new \Ko_Legal_Addon\Ko_Legal_Featured() );
 
 	}
 
