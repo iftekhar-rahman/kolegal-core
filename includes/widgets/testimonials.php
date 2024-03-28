@@ -203,11 +203,28 @@ class Ko_Legal_Testimonials extends \Elementor\Widget_Base {
 									<i aria-hidden="true" class="icon icon-quote right-icon"></i>
 								</div>
 								<div class="testimonial-footer">
-									<div class="author-detail">
+									<div class="author-detail author-extra-text">
+										<div class="author-image">
+											<?php
+											if ( has_post_thumbnail() ) {
+												the_post_thumbnail();
+											}
+											?>
+										</div>
 										<?php
-										if ( has_post_thumbnail() ) {
-											the_post_thumbnail();
-										}
+										$author_heading_one = get_field( "author_heading_one" );
+										$author_heading_two = get_field( "author_heading_two" );
+
+										if( $author_heading_one || $author_heading_two ) {
+											?>
+											<div class="author-meta">
+												<?php if($author_heading_one): ?>
+												<h3><?php echo $author_heading_one; ?></h3>
+												<?php endif; ?>
+												<p><?php echo $author_heading_two; ?></p>
+											</div>
+											<?php
+										} 
 										?>
 									</div>
 									<div class="stars">

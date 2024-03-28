@@ -3,24 +3,27 @@
 }
 .single-featured img {
     max-width: 120px;
-    max-height: 50px;
+    max-height: 40px;
 }
 .featured-wrap{
     align-items: center;
 }
 .single-featured {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* padding: 15px 30px; */
 }
 @media (min-width: 1025px){
-    .featured-wrap{
+    .featured-wrap {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-wrap: nowrap;
         align-items: center;
     }
     .single-featured {
-        width: 15%;
-        padding: 15px;
+        width: auto;
+        padding: 15px 0px;
     }
     
 }

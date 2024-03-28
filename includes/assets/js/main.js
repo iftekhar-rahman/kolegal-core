@@ -96,9 +96,10 @@
       var Process = new Swiper(".Featured", {
         slidesPerView: 3,
         spaceBetween: 30, // Distance between slides in px.
-        loop: false,
+        loop: true,
         centeredSlides: false,
         preventInteractionOnTransition: true,
+        autoplay: true,
         autoplay: {
           delay: 3000,
         },

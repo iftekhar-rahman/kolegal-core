@@ -68,7 +68,19 @@
 }
 .testimonials-wrap .author-detail{
     margin-bottom: 15px;
-    font-weight: 700;    
+    font-weight: 700;  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.testimonials-wrap .author-detail .author-meta {
+    text-align: left;
+    margin-left: 15px;
+}
+.testimonials-wrap .author-detail .author-meta h3 {
+    font-size: 20px;
+    font-family: "Bai Jamjuree";
+    margin: 0 0 10px;
 }
 .testimonials-wrap .author-detail p {
     font-size: 16px;
